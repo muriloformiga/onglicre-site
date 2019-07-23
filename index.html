@@ -25,7 +25,12 @@
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="cs/custom-instafeed.css">
+    <!--<link rel="stylesheet" href="css/custom-instafeed.css">-->
+
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+    
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
+
 </head>
 <body>
     <header class="site-header">
@@ -345,6 +350,15 @@
     <div class="col-md-12">
         <div id="instafeed"></div>
     </div>
+
+    <!--================ Start Instagram Area =================-->
+	<div class="multiple-items">
+        <div>1 content</div>
+        <div>2 content</div>
+        <div>3 content</div>
+        <div>4 content</div>
+    </div>
+	<!--================ End Instagram Area =================-->
  
     <div class="home-page-limestone">
         <div class="container">
@@ -739,9 +753,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     </footer><!-- .site-footer -->
 
     <!-- Scripts -->
+    
     <script type='text/javascript' src='js/jquery.js'></script>
-    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
     <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
     <script type='text/javascript' src='js/jquery.countdown.min.js'></script>
     <script type='text/javascript' src='js/circle-progress.min.js'></script>
     <script type='text/javascript' src='js/jquery.countTo.min.js'></script>
@@ -749,6 +764,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script type='text/javascript' src='js/custom.js'></script>
     <script type='text/javascript' src="js/instafeed/instafeed.min.js"></script>
     <script type='text/javascript' src="js/instafeed/custom.js"></script>
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.multiple-items').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            arrow: true,
+            autoplay: true
+        });
+    </script>
 
 </body>
 </html>
