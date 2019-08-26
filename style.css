@@ -2166,3 +2166,18 @@ ul.tabs-nav .tab-nav.active {
     text-align: center;
 }
 
+/*--------------------------------------------------------------
+# Media Query
+--------------------------------------------------------------*/
+
+@media (max-width: 500px) 
+{
+    .btn
+    {
+        padding: 15px;
+    }
+    #titulo-lar
+    {
+        font-size: 1.3rem;
+    }
+}
